@@ -1,0 +1,90 @@
+.spinner {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #261f22;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#span_container {
+  width: 100%;
+  height: 100%;
+}
+span {
+  position: absolute;
+  width: 125px;
+  height: 30px;
+  transition: 10s ease all;
+}
+.animate_right {
+  transform: translateX(200px);
+}
+
+span:nth-child(1) {
+  background: var(--dk);
+  left: -65px;
+  top: 330px;
+}
+span:nth-child(2) {
+  background: var(--dh);
+  left: 50px;
+  top: 270px;
+}
+span:nth-child(3) {
+  background: var(--hu);
+  left: 110px;
+  top: 330px;
+}
+span:nth-child(4) {
+  background: var(--ma);
+  left: 210px;
+  top: 210px;
+}
+span:nth-child(5) {
+  background: var(--pr);
+  left: 351px;
+  top: 255px;
+}
+span:nth-child(6) {
+  background: var(--pa);
+  left: 328px;
+  top: 326px;
+}
+span:nth-child(7) {
+  background: var(--dr);
+  left: 455px;
+  top: 190px;
+}
+span:nth-child(8) {
+  background: var(--sh);
+  left: 490px;
+  top: 330px;
+}
+span:nth-child(9) {
+  background: var(--wl);
+  left: 550px;
+  top: 255px;
+}
+span:nth-child(10) {
+  background: var(--wr);
+  left: 675px;
+  top: 300px;
+}
+span:nth-child(11) {
+  background: var(--rg);
+  left: 224px;
+  top: 384px;
+}
+span:nth-child(12) {
+  background: var(--mk);
+  left: 675px;
+  top: 300px;
+}
