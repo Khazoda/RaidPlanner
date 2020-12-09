@@ -10,5 +10,14 @@
   --rg: #fff468;
   --sh: #0070dd;
   --wl: #8788ee;
-  --wa: #c69b6d;
+  --wr: #c69b6d;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(./static/fonts/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: LaoSansPro;
+  src: url(./static/fonts/LaoSansPro-Regular.ttf);
 }

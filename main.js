@@ -1,5 +1,5 @@
 const { app, BrowserWindow, Menu } = require("electron");
-const { ipcMain } = require("electron");
+const { ipcMain, webFrame} = require("electron");
 
 app.on("ready", () => {
   const loadingScreen = "src/loading/loading.html";
@@ -28,7 +28,7 @@ function loadMain(loadingScreen, mainScreen) {
       loadingWin.close();
       mainWin.show();
       loadTitleBar();
-    },20000);
+    }, 20000);
   });
 }
 
@@ -41,8 +41,8 @@ function loadSplash(loadingScreen) {
     frame: false,
     show: false,
     webPreferences: {
-        nodeIntegration: true
-    }
+      nodeIntegration: true,
+    },
   });
   loadingWin.loadFile(loadingScreen);
   loadingWin.once("ready-to-show", () => {
